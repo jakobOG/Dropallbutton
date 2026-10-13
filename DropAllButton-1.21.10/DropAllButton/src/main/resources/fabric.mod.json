@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "dropall",
+  "version": "${version}",
+  "name": "Drop All Button",
+  "description": "Button im Inventar und in Kisten, um Inventar und/oder Kisteninhalt mit einem Klick zu droppen.",
+  "authors": [],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [ "de.dropall.DropAllClient" ]
+  },
+  "mixins": [
+    { "config": "dropall.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": "1.21.10",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
